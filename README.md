@@ -24,3 +24,12 @@ Libraries/Features:
 8.Designed with single activity architecture.
 
 9.LiveData,view models,coroutines etc.
+
+Screensorts of the app:
+
+<img src="screenshots/screenshort1.png" width="250">
+<img src="screenshots/screenshort2.png" width="250">
+<img src="screenshots/screenshort3.png" width="250">
+<img src="screenshots/screenshort4.png" width="250">
+<img src="screenshots/screenshort5.png" width="250">
+<img src="screenshots/screenshort6.png" width="250">
