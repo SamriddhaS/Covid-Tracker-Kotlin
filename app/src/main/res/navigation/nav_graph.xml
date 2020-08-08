@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/globalDataFragment">
+
+    <fragment
+        android:id="@+id/globalDataFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.global.GlobalDataFragment"
+        android:label="@string/txt_frg_global"
+        tools:layout="@layout/global_data_fragment"
+        />
+    <fragment
+        android:id="@+id/countriesFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.countries.CountriesFragment"
+        android:label="@string/txt_frg_all_countries"
+        tools:layout="@layout/countries_fragment" >
+        <action
+            android:id="@+id/action_countriesFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/indiaStatFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.india.IndiaStatFragment"
+        android:label="@string/txt_frg_india"
+        tools:layout="@layout/india_stat_fragment" >
+        <action
+            android:id="@+id/action_indiaStatFragment_to_allStatesFragment"
+            app:destination="@id/allStatesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.countries.CountryDetailFragment"
+        android:label="@string/txt_frg_country_detail"
+        tools:layout="@layout/fragment_country_detail" />
+
+    <fragment
+        android:id="@+id/allStatesFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.india.states.AllStatesFragment"
+        android:label="@string/txt_frg_states"
+        tools:layout="@layout/fragment_all_states" >
+        <action
+            android:id="@+id/action_allStatesFragment_to_allDistrictsFragment"
+            app:destination="@id/allDistrictsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/allDistrictsFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.india.districts.AllDistrictsFragment"
+        android:label="@string/txt_frg_districts"
+        tools:layout="@layout/all_districts_fragment" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.samriddha.covid19trackerkotlin.ui.AboutAppFragment"
+        android:label="@string/txt_frg_about_app"
+        tools:layout="@layout/fragment_about_app" />
+
+</navigation>

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:context=".ui.countries.CountryDetailFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleTextAppearance="@color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax">
+
+                <ImageView
+                    android:id="@+id/ivCountryFlag"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/india" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/semiTransBlack"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/txt_covid_stats"
+                            android:textAppearance="@style/TextViewSubTitle"
+                            android:textSize="@dimen/textSize24" />
+
+                        <TextView
+                            android:id="@+id/tvCountryName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/margin5dp"
+                            android:text="India"
+                            android:textAppearance="@style/TextViewSubTitle"
+                            android:textSize="@dimen/textSize24" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin14dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_country_name"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvCountryName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="India"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_continent"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvContinent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="Asia"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_active_cases"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvActiveCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="80756"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_total_case"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvTotalCase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="87556"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_listed_today"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvListedToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="56"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_recovered"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvRecovered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="4569"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_positive_per_m"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvCasePM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="458"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_total_deaths"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvTotalDeath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="4569"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_deaths_today"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvDeathToday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="33"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_deaths_per_m"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvDeathPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="78"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_total_people_tested"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvPeopleTested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="10000"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:layout_marginTop="@dimen/margin14dp"
+                android:layout_marginRight="@dimen/margin38dp"
+                android:layout_marginBottom="@dimen/margin14dp"
+                android:background="@color/textColorWhite2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin24dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_tests_per_m"
+                    android:textAppearance="@style/CardTextView" />
+
+                <TextView
+                    android:id="@+id/tvTestPM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin8dp"
+                    android:text="100"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

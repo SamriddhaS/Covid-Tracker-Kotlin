@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" >কোভিড ট্র্যাকার</string>
+
+    <!--  Texts English  -->
+    <string name="txt_world_dashboard">বিশ্বব্যাপী তথ্য</string>
+    <string name="txt_total_case">মোট সংক্রামিত</string>
+    <string name="txt_active_cases">সক্রিয় সংক্রামিত</string>
+    <string name="txt_recovered">ভালো হোয়াচেন</string>
+    <string name="txt_recovered_today">আজ ভালো হোয়াচেন</string>
+    <string name="txt_total_deaths">মোট মৃত্যু</string>
+    <string name="txt_positive_per_m">সংক্রামিত সংখ্যা / 10 লক্ষ</string>
+    <string name="txt_listed_today">আজ সংক্রামিত</string>
+    <string name="txt_today_case">আজ সংক্রামিত</string>
+    <string name="txt_deaths_today">আজ মৃত্যু</string>
+    <string name="txt_deaths_per_m">মৃত্যু / 10 লক্ষ</string>
+    <string name="txt_critical_condition">গুরুতর অবস্থায়</string>
+    <string name="txt_total_people_tested">মোট পরীক্ষিত</string>
+    <string name="txt_tests_per_m">পরীক্ষিত / 10 লক্ষ</string>
+    <string name="txt_affected_countries">আক্রান্ত দেশ সংখ্যা</string>
+    <string name="txt_major_symptoms">প্রধান লক্ষণগুলি হ/ল</string>
+    <string name="txt_high_fever">মাত্রাতিরিক্ত জ্বর</string>
+    <string name="txt_breathing_problems">শ্বাসকষ্ট</string>
+    <string name="txt_sore_throat">গলা ব্যথা</string>
+    <string name="txt_dry_cough">শুষ্ক কাশি</string>
+    <string name="txt_muscle_pain">পেশী ব্যথা এবং অসুস্থতা</string>
+    <string name="txt_runny_nose">সর্দি</string>
+    <string name="txt_headache">মাথা ব্যাথা</string>
+    <string name="txt_preventions">প্রতিরোধমূলক ব্যবস্থা</string>
+    <string name="txt_wash_hands">হাত সাবান দিয়ে প্রায়শই ধুয়ে নিন</string>
+    <string name="txt_wear_musk">সর্বদা একটি কস্তুরী পরেন</string>
+    <string name="txt_social_distancing">সামাজিক দূরত্ব বজায় রাখুন</string>
+    <string name="txt_stay_home">বাড়িতে থাকুন নিরাপদ থাকুন</string>
+    <string name="txt_avoid_gathering">সামাজিক সমাবেশ এড়ান</string>
+    <string name="txt_touch_face">আপনার মুখটি স্পর্শ করবেন না</string>
+    <string name="txt_use_tissue">কাশি বা হাঁচি দিলে টিস্যু ব্যবহার করুন</string>
+    <string name="txt_covid_stats">কোভিড -19 পরিসংখ্যান</string>
+    <string name="txt_country_name">দেশের নাম</string>
+    <string name="txt_continent">মহাদেশ</string>
+
+    <string name="txt_district">জেলা</string>
+    <string name="txt_total">মোট</string>
+    <string name="txt_active">সক্রিয়</string>
+    <string name="txt_recover">সুস্থ</string>
+    <string name="txt_dead">মৃত</string>
+    <string name="txt_click_for_districts">জেলা ডেটা জন্য ক্লিক করুন</string>
+    <string name="txt_last_updated">সর্বশেষ সংষ্করণ :</string>
+
+    <string name="txt_see_pie">পাই গ্রাফ দেখুন</string>
+    <string name="txt_see_line">লাইন গ্রাফ দেখুন</string>
+
+    <string name="txt_country_stat">দেশ পরিসংখ্যান</string>
+    <string name="txt_scroll">আরও দেখতে স্ক্রোল করুন</string>
+
+    <string name="txt_state_wise">রাজ্য অনুসারে তথ্য</string>
+    <string name="txt_state_name">রাজ্য</string>
+
+    <string name="txt_all_state_district">সমস্ত রাজ্য এবং জেলা ডেটা</string>
+
+    <string name="txt_no_connection">সংযোগ পাওয়া যায় না !!</string>
+    <string name="txt_check_internet">ইন্টারনেট সংযোগ যাচাই করুন</string>
+    <string name="txt_try_again">আবার চেষ্টা করুন</string>
+
+    <!--Menu Text English-->
+    <string name="txt_sort">সাজান</string>
+    <string name="txt_sort_total">মোট কেস দ্বারা</string>
+    <string name="txt_sort_active">সক্রিয় কেস দ্বারা</string>
+    <string name="txt_sort_recovered">সুস্থ দ্বারা</string>
+    <string name="txt_sort_death">মৃত্যু দ্বারা</string>
+    <string name="txt_sort_today_case">আজ আক্রান্ত দ্বারা</string>
+    <string name="txt_sort_today_death">আজ মৃত্যু দ্বারা</string>
+    <string name="txt_sort_A_Z">A-Z দ্বারা</string>
+
+    <string name="txt_covid_info">কোভিড -১৯ তথ্য</string>
+    <string name="txt_see_global">গ্লোবাল তথ্য দেখুন</string>
+    <string name="txt_india_detail">ভারতের বিবরণ দেখুন</string>
+    <string name="txt_see_all_countries">সমস্ত দেশ দেখুন</string>
+    <string name="txt_others">অন্যান্য</string>
+    <string name="txt_about_the_app">অ্যাপটি সম্পর্কে</string>
+    <string name="txt_share">অ্যাপ শেয়ার করুন</string>
+
+    <!--Fragment Label Texts-->
+    <string name="txt_frg_global">গ্লোবাল তথ্য</string>
+    <string name="txt_frg_all_countries">সমস্ত সংক্রামিত দেশ</string>
+    <string name="txt_frg_india">ভারত বিস্তারিত তথ্য</string>
+    <string name="txt_frg_country_detail">দেশের বিবরণ</string>
+    <string name="txt_frg_states">ভারত সব রাজ্য</string>
+    <string name="txt_frg_districts">জেলাভিত্তিক ডেটা</string>
+    <string name="txt_frg_about_app">অ্যাপটি সম্পর্কে</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/searchCountry"
+        android:title="Search Countries"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+
+
+    <item
+        android:id="@+id/menuSortResult"
+        android:title="@string/txt_sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="never"
+        >
+        <menu>
+            <group
+                android:checkableBehavior="single"
+                >
+
+                <item
+                    android:title="@string/txt_sort_total"
+                    android:id="@+id/sortTotalCase"
+                    />
+
+                <item
+                    android:title="@string/txt_sort_active"
+                    android:id="@+id/sortActiveCase"
+                    />
+
+                <item
+                    android:title="@string/txt_sort_recovered"
+                    android:id="@+id/sortRecovered"
+                    />
+
+                <item
+                    android:title="@string/txt_sort_death"
+                    android:id="@+id/sortDeaths"
+                    />
+                <item
+                    android:title="@string/txt_sort_today_case"
+                    android:id="@+id/sortTodayCase"
+                    />
+
+
+                <item
+                    android:title="@string/txt_sort_today_death"
+                    android:id="@+id/sortTodayDeaths"
+                    />
+
+                <item
+                    android:title="@string/txt_sort_A_Z"
+                    android:id="@+id/sortA_Z"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

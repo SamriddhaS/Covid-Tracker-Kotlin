@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutAppFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/padding18dp"
+    android:gravity="center_horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin38dp"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/covidicon1"
+            android:layout_marginBottom="@dimen/margin14dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Covid Tracker App"
+            android:textAppearance="@style/TextViewSubTitle"
+            android:layout_margin="@dimen/margin3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V 1.0.0"
+            android:textAppearance="@style/TextViewSubTitle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This App Is Designed And Developed"
+            android:textAppearance="@style/CardTextViewSmall"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By"
+            android:textAppearance="@style/CardTextViewSmall"
+            android:layout_margin="@dimen/margin3dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Samriddha Samanta"
+            android:textAppearance="@style/CardTextViewSmall"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Info"
+            android:textAppearance="@style/CardTextViewSmall"
+            android:layout_margin="@dimen/margin14dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:layout_margin="@dimen/margin3dp"
+            android:textColor="@color/white"
+            android:autoLink="email"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/linkedIn"
+            android:layout_margin="@dimen/margin3dp"
+            android:textAppearance="@style/CardTextViewSmall"
+            android:id="@+id/linkedIn"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/github"
+            android:textAppearance="@style/CardTextViewSmall"
+            android:layout_margin="@dimen/margin3dp"
+            android:id="@+id/github"
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

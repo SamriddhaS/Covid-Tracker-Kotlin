@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.india.IndiaStatFragment"
+    android:id="@+id/indiaMainLayout"
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewSwitcher
+                android:id="@+id/viewSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:background="@color/transparent"
+                android:padding="@dimen/padding5dp"
+                android:visibility="invisible">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+
+            </ViewSwitcher>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOff="@string/txt_see_pie"
+                android:textOn="@string/txt_see_line"
+                android:background="@drawable/btn_background"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/CardTextViewSmall"
+                android:id="@+id/toggleButton"
+                android:layout_marginTop="@dimen/margin5dp"
+                android:padding="@dimen/padding14dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin14dp"
+                    android:text="@string/txt_country_stat"
+                    android:textAppearance="@style/TextViewSubTitle"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/margin18dp"
+                    android:layout_marginTop="@dimen/margin14dp"
+                    android:layout_marginRight="@dimen/margin18dp"
+                    android:layout_marginBottom="@dimen/margin18dp"
+                    android:background="@color/white" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundElevation2dp"
+                    app:cardCornerRadius="@dimen/margin8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.core.widget.NestedScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:layout_marginTop="@dimen/margin14dp"
+                            android:overScrollMode="never"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_total_case"
+                                        android:textAppearance="@style/CardTextView"
+                                        android:textColor="@color/totalCase" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndTotalCase"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="67000"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_active_cases"
+                                        android:textAppearance="@style/CardTextView"
+                                        android:textColor="@color/activeCase" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndActiveCase"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="44503"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_recovered"
+                                        android:textAppearance="@style/CardTextView"
+                                        android:textColor="@color/recovered" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndRecovered"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="2036"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_total_deaths"
+                                        android:textAppearance="@style/CardTextView"
+                                        android:textColor="@color/death" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndDeaths"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="7006"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_listed_today"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndListedToday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="203"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_deaths_today"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndDeathsToday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="33"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_recovered_today"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndRecoveredToday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="33"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_positive_per_m"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndCasePM"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="225"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_deaths_per_m"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndDeathsPM"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="225"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_total_people_tested"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndTested"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="225"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0.5dp"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:layout_marginTop="@dimen/margin14dp"
+                                    android:layout_marginRight="@dimen/margin38dp"
+                                    android:layout_marginBottom="@dimen/margin14dp"
+                                    android:background="@color/textColorWhite2" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin24dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_tests_per_m"
+                                        android:textAppearance="@style/CardTextView" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndTestedPM"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/margin8dp"
+                                        android:text="225"
+                                        android:textAppearance="@style/TextViewSubTitle" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/margin5dp"
+                                    android:gravity="center_horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/txt_last_updated"
+                                        android:textAppearance="@style/CardTextViewSmall"
+                                        android:textColor="@color/textColorWhite3" />
+
+                                    <TextView
+                                        android:id="@+id/tvIndLastUpdated"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/margin5dp"
+                                        android:text="13/05/2020 20:33:34"
+                                        android:textAppearance="@style/CardTextViewSmall"
+                                        android:textColor="@color/textColorWhite3" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.core.widget.NestedScrollView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin5dp"
+                            android:layout_marginBottom="@dimen/margin5dp"
+                            android:text="@string/txt_scroll"
+                            android:textAlignment="center"
+                            android:textColor="@color/textColorWhite3"
+                            android:textSize="@dimen/textSize14" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin18dp"
+                    android:text="@string/txt_state_wise"
+                    android:textAppearance="@style/TextViewSubTitle" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/margin18dp"
+                    android:layout_marginTop="@dimen/margin14dp"
+                    android:layout_marginRight="@dimen/margin18dp"
+                    android:layout_marginBottom="@dimen/margin14dp"
+                    android:background="@color/white" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundElevation2dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin14dp"
+                            android:layout_marginBottom="@dimen/margin14dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="5">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:text="@string/txt_state_name"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/CardTextView"
+                                android:textSize="@dimen/textSize14" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_total"
+                                    android:textAppearance="@style/CardTextView"
+                                    android:textSize="@dimen/textSize14" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_active"
+                                    android:textAppearance="@style/CardTextView"
+                                    android:textSize="@dimen/textSize14" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_recover"
+                                    android:textAppearance="@style/CardTextView"
+                                    android:textSize="@dimen/textSize14" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/indiaStateRecycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/state_list_item" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_all_state_district"
+                    android:textAppearance="@style/CardTextView"
+                    android:layout_margin="@dimen/margin18dp"
+                    android:id="@+id/btnStateAndDistrict"
+                    android:gravity="center"
+                    android:padding="@dimen/padding18dp"
+                    android:background="@drawable/btn_background"
+                    android:textColor="@color/textColorWhite2"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

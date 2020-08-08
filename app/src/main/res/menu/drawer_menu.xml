@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidshowIn="http://schemas.android.com/apk/res-auto"
+    xmlns:showIn="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/navTitle1"
+        android:title="@string/txt_covid_info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/globalDataFragment"
+                    android:icon="@drawable/ic_earth"
+                    android:title="@string/txt_see_global" />
+
+                <item
+                    android:id="@+id/indiaStatFragment"
+                    android:icon="@drawable/ic_flag"
+                    android:title="@string/txt_india_detail" />
+
+                <item
+                    android:id="@+id/countriesFragment"
+                    android:icon="@drawable/ic_all_countries"
+                    android:title="@string/txt_see_all_countries" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/navTitle2"
+        android:title="@string/txt_others"
+
+        >
+        <menu>
+            <item
+                android:id="@+id/aboutAppFragment"
+                android:icon="@drawable/ic_info"
+                android:title="@string/txt_about_the_app" />
+
+            <item
+                android:id="@+id/shareApp"
+                android:icon="@drawable/ic_share"
+                android:title="@string/txt_share" />
+
+
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Covid Tracker</string>
+
+    <string name="drawer_open" translatable="false">Open Navigation Drawer</string>
+    <string name="drawer_close" translatable="false">Close Navigation Drawer</string>
+
+    <dimen name="margin3dp">3dp</dimen>
+    <dimen name="margin5dp">5dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin12dp">12dp</dimen>
+    <dimen name="margin14dp">15dp</dimen>
+    <dimen name="margin18dp">18dp</dimen>
+    <dimen name="margin24dp">24dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+    <dimen name="margin38dp">38dp</dimen>
+    <dimen name="margin42dp">42dp</dimen>
+
+    <dimen name="padding5dp">5dp</dimen>
+    <dimen name="padding8dp">8dp</dimen>
+    <dimen name="padding14dp">14dp</dimen>
+    <dimen name="padding18dp">18dp</dimen>
+    <dimen name="padding24dp">24dp</dimen>
+    <dimen name="padding32dp">32dp</dimen>
+
+    <dimen name="textSize12">12sp</dimen>
+    <dimen name="textSize14">14sp</dimen>
+    <dimen name="textSize18">18sp</dimen>
+    <dimen name="textSize22">22sp</dimen>
+    <dimen name="textSize24">24sp</dimen>
+    <dimen name="textSize28">28sp</dimen>
+    <dimen name="textSize32">32sp</dimen>
+    <dimen name="textSize38">38sp</dimen>
+
+    <string name="linkedIn" translatable="false"><a href="https://www.linkedin.com/in/samriddha-samanta/">LinkedIn Profile</a></string>
+    <string name="github" translatable="false"><a href="https://github.com/samriddhaS">Github Profile</a></string>
+    <string name="email" translatable="false"><a href="samriddha97@gmail.com">samriddha97@gmail.com</a></string>
+
+
+    <!--  Texts English  -->
+    <string name="txt_world_dashboard">World Wide Dashboard</string>
+    <string name="txt_total_case">Total Cases</string>
+    <string name="txt_active_cases">Active Cases</string>
+    <string name="txt_recovered">Recovered</string>
+    <string name="txt_recovered_today">Recovered Today</string>
+    <string name="txt_total_deaths">Total Deaths</string>
+    <string name="txt_positive_per_m">Positive Case / M</string>
+    <string name="txt_listed_today">Listed Today</string>
+    <string name="txt_today_case">Today Cases</string>
+    <string name="txt_deaths_today">Deaths Today</string>
+    <string name="txt_deaths_per_m">Deaths/Million</string>
+    <string name="txt_critical_condition">In Critical Condition</string>
+    <string name="txt_total_people_tested">Total People Tested</string>
+    <string name="txt_tests_per_m">Tests/Million</string>
+    <string name="txt_affected_countries">Affected Countries</string>
+    <string name="txt_major_symptoms">Major Symptoms</string>
+    <string name="txt_high_fever">High Fever</string>
+    <string name="txt_breathing_problems">Breathing Problems</string>
+    <string name="txt_sore_throat">Sore Throat</string>
+    <string name="txt_dry_cough">Dry Cough</string>
+    <string name="txt_muscle_pain">Muscle Pain And Sickness</string>
+    <string name="txt_runny_nose">Runny Nose</string>
+    <string name="txt_headache">Headache</string>
+    <string name="txt_preventions">Preventions</string>
+    <string name="txt_wash_hands">Wash Hands Often With Soap</string>
+    <string name="txt_wear_musk">Always Wear A Musk</string>
+    <string name="txt_social_distancing">Maintain Social Distancing</string>
+    <string name="txt_stay_home">Stay At Home</string>
+    <string name="txt_avoid_gathering">Avoid Social Gathering</string>
+    <string name="txt_touch_face">Don\t Touch Your Face</string>
+    <string name="txt_use_tissue">Use Tissue When You Cough Or Sneeze</string>
+    <string name="txt_covid_stats">Covid-19 Stats</string>
+    <string name="txt_country_name">Country Name</string>
+    <string name="txt_continent">Continent</string>
+
+    <string name="txt_district">District</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_active">Active</string>
+    <string name="txt_recover">Recover</string>
+    <string name="txt_dead">Dead</string>
+    <string name="txt_click_for_districts">Click For Districts Data</string>
+    <string name="txt_last_updated">Last Updated :</string>
+
+    <string name="txt_see_pie">See Pie Graph</string>
+    <string name="txt_see_line">See Line Graph</string>
+
+    <string name="txt_country_stat">Country Stats</string>
+    <string name="txt_scroll">Scroll To See More</string>
+
+    <string name="txt_state_wise">State Wise Data</string>
+    <string name="txt_state_name">State Name</string>
+
+    <string name="txt_all_state_district">All States And Districts Data</string>
+
+    <string name="txt_no_connection">Connection Not Available !!</string>
+    <string name="txt_check_internet">No Connection!! Refresh Needed.</string>
+    <string name="txt_try_again">Retry</string>
+
+    <!--Menu Text English-->
+    <string name="txt_sort">Sort Result</string>
+    <string name="txt_sort_total">By Total Cases</string>
+    <string name="txt_sort_active">By Active Cases</string>
+    <string name="txt_sort_recovered">By Recovered</string>
+    <string name="txt_sort_death">By Deaths</string>
+    <string name="txt_sort_today_case">By Today Case</string>
+    <string name="txt_sort_today_death">By Today Deaths</string>
+    <string name="txt_sort_A_Z">By A-Z</string>
+
+    <string name="txt_covid_info">Covid-19 Info</string>
+    <string name="txt_see_global">See Global Information</string>
+    <string name="txt_india_detail">India Details</string>
+    <string name="txt_see_all_countries">See All Countries</string>
+    <string name="txt_others">Others</string>
+    <string name="txt_about_the_app">About The App</string>
+    <string name="txt_share">Share App</string>
+
+    <!--Fragment Label Texts-->
+    <string name="txt_frg_global">Global Statistics</string>
+    <string name="txt_frg_all_countries">All Countries</string>
+    <string name="txt_frg_india">India Statistics</string>
+    <string name="txt_frg_country_detail">Country Details</string>
+    <string name="txt_frg_states">India All States</string>
+    <string name="txt_frg_districts">District Wise Data</string>
+    <string name="txt_frg_about_app">About The App</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+</resources>

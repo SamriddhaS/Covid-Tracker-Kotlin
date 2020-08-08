@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin18dp"
+    android:background="@color/transparent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDistItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uttara Kannada"
+                android:textAlignment="center"
+                android:textAppearance="@style/CardTextViewSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDisItemTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3600"
+                android:textAppearance="@style/CardTextViewSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDistItemActive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0078"
+                android:textAppearance="@style/CardTextViewSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDistItemRecovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="360"
+                android:textAppearance="@style/CardTextViewSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvDistItemDead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="73"
+                android:textAppearance="@style/CardTextViewSmall" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#272727</color>
+    <color name="colorPrimaryDark">#272727</color>
+    <color name="colorAccent">#26A699</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="appBackground">#272727</color>
+    <color name="appBackground1">#121212</color>
+    <color name="semiTransBlack">#80000000</color>
+    <color name="semiTransBlack2">#99000000</color>
+    <color name="secondaryColour">#03DAC5</color>
+
+
+    <color name="textColorWhite1">#DEFFFFFF</color>
+    <color name="textColorWhite2">#99FFFFFF</color>
+    <color name="textColorWhite3">#61FFFFFF</color>
+
+
+
+    <color name="backgroundElevation1dp">#0DFFFFFF</color>
+    <color name="backgroundElevation2dp">#12FFFFFF</color>
+    <color name="backgroundElevation3dp">#14FFFFFF</color>
+    <color name="backgroundElevation4dp">#17FFFFFF</color>
+    <color name="backgroundElevation6dp">#1CFFFFFF</color>
+    <color name="backgroundElevation8dp">#1FFFFFFF</color>
+    <color name="backgroundElevation12dp">#24FFFFFF</color>
+    <color name="backgroundElevation16dp">#26FFFFFF</color>
+    <color name="backgroundElevation24dp">#29FFFFFF</color>
+
+
+
+    <color name="activeCase">#FFA48E</color>
+    <color name="recovered">#4ACFAC</color>
+    <color name="totalCase">#BB86FC</color>
+    <color name="death">#D87585</color>
+
+
+</resources>
