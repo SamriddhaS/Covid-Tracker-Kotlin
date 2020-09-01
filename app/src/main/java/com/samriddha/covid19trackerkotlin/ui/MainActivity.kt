@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         setSupportActionBar(mainToolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true) //back button for every fragment
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
         val menu = navigationView.menu;
