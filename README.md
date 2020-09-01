@@ -3,6 +3,8 @@ This app shows covid information from india and all over the globe.This is an up
 This app can help you to be up to date with covid-19 information from any country which you want to see.This app has a separate section for covid information of India.You can go much deep and see information based on districts for every Indian states.
 You can see information from all over the globe and from any country which you want.
 
+Here is the link to see java version of this app:https://github.com/SamriddhaS/Covid_Tracker.git
+
 Languages Used : Kotlin,Java,Xml.
 
 Libraries/Features:
