@@ -1,4 +1,7 @@
 # covid-tracker-kotlin
+
+### Download the app apk: https://github.com/SamriddhaS/Covid-Tracker-Kotlin/download-apk/covid-tracker.apk
+
 This app shows covid information from india and all over the globe.This is an upgrade over my previous project named "Covid Tracker" which is also available in my repositories.
 This app can help you to be up to date with covid-19 information from any country which you want to see.This app has a separate section for covid information of India.You can go much deep and see information based on districts for every Indian states.
 You can see information from all over the globe and from any country which you want.
